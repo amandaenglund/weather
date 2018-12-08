@@ -1,0 +1,15 @@
+extends index_weather.pug
+
+block content
+    .form-style
+        form(method='POST' action='/clothes')
+            input.inputfield(type='text', placeholder='Vart befinner du dig?', name='city')
+            br
+            input.button(type='submit', name='data')
+    .answer
+        if(name)
+            h3="Klädkod: " + clothes
+            img(src=foto, alt="" height="200px")
+            p="Stad: " + name
+            p="Temperatur: " + temp
+            p="Luftfuktighet: " + hum

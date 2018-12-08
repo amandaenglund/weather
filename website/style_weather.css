@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+    background: 
+      /* top, transparent red, faked with gradient */ 
+      linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)
+      ),
+      /* bottom, image */
+      url(https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2016/09/23/103965484-GettyImages-506104983.1910x1000.jpg?v=1474664049) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#test {
+    background-color: red;
+}
+
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    display: none; /* Hidden by default */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+}
+
+h1 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+    padding: 25px;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: 300; 
+}
+
+p {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 200; 
+}
+
+.form-style {
+    border-radius: 5px;
+    background-color: rgba(248, 200, 200, 0.808);;
+    padding: 20px;
+    width: 40%;
+    margin: auto;
+}
+
+.inputfield {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #ddd;
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    width: 40%;
+    color: rgb(78, 78, 78);
+    text-transform: uppercase;
+  }
